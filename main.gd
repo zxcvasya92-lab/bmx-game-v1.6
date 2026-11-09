@@ -230,7 +230,7 @@ var gr_h := 0.244
 # падение райдера при бейле и приземление на мануал
 const RF_COM := Vector3(0.0, 0.85, 0.30)
 const RF_R := 0.2
-const MANUAL_LAND_MIN := 0.35
+const MANUAL_LAND_MIN := 0.86
 var rider_free := false
 var rider_home := Transform3D.IDENTITY
 var rf_com := Vector3.ZERO
@@ -270,7 +270,7 @@ var gr_jump_req := false
 var gr_pull := false
 
 # слайд-докрутка 360 (приземление с недокрученным 360 + Треугольник + стик в сторону вращения)
-const SPIN_SLIDE_MIN := PI * 1.5
+const SPIN_SLIDE_MIN := PI * 1.05
 const SPIN_SLIDE_GAP := 0.35
 var sl_kind := 0
 var sl_rot_rem := 0.0
